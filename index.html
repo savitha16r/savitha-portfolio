@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Savitha Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: purple;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .hero {
+      background: #fce4ec;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .box {
+      flex: 1 1 45%;
+      background: #f8f8f8;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+      .box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm Savitha 👋</h1>
+    <p>Welcome to my portfolio website</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m an aspiring web developer currently learning HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="skills" class="container">
+    <div class="box">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Tools</h2>
+      <ul>
+        <li>VS Code</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon…</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: savitha@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Savitha</p>
+  </footer>
+
+</body>
+</html>
